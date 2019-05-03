@@ -39,5 +39,28 @@ public class RecursiveFunctions {
 		}
 	}
 	
+	public static boolean ifPalindrome(String word) {
+		
+		 if(word.length() <= 1){
+		        return true;
+		    }else{
+		        if(word.charAt(0) == word.charAt(word.length() - 1)){
+		            return ifPalindrome(word.substring(1,word.length() - 1 ) );
+		        }else{
+		            return false;
+		        }
+		    }   
+		
+	}
+	
+	public static String reverseWord(String word) {
+		
+		if (word.length() == 1)
+			return word;
+			else {
+			return reverseWord(word.substring(1))+ "" + word.charAt(0);
+			}
+	}
+	
 
 }

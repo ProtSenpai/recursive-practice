@@ -35,6 +35,23 @@ class RecursiveFunctionsTest {
 
 	}
 	
+	@Test
 	
+	void palindromeTest() {
+		
+		assertTrue(RecursiveFunctions.ifPalindrome("ana"), "la palabra no es palindrome");
+		assertTrue(RecursiveFunctions.ifPalindrome("rotor"), "la palabra no es palindrome");
+		assertTrue(RecursiveFunctions.ifPalindrome("anitalavalatina"), "la palabra no es palindrome");
+		
+	}
+	
+	@Test
+	
+	void reverseTest() {
+		
+		assertTrue(RecursiveFunctions.reverseWord("Saque 5").equals("5 euqaS"), "the method don't reverse");
+		assertTrue(RecursiveFunctions.reverseWord("Hola Mundo").equals("odnuM aloH"), "the method don't reverse");
+
+	}
 	
 }
